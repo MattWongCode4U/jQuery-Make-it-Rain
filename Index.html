@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Make it Rain!</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="JS/start.js"></script>
+		<script src="JS/game.js"></script>
+		<script src="JS/highscore.js"></script>
+		<script src="JS/distractions.js"></script>
+		<script>
+			$(document).ready(function() {
+				startGame();
+				$("#apprentice").trigger('load');
+				$("#doublelift").trigger('load');
+				$("#doublelift").trigger('play');
+				$("#apprentice").trigger('pause');
+			});	
+		</script>
+	</head>
+	<body>
+		<audio class="music" id="apprentice" preload="none" loop>
+			<source src="Music/TheApprentice.mp3" type="audio/mpeg">
+		</audio>
+		<audio class="music" id="doublelift" preload="none" loop>
+			<source src="Music/Money In The Bank, Pimping Ain't Easy.mp3" type="audio/mpeg">
+		</audio>
+		<div class="alert-success">
+		
+		</div>
+		<!--<div>
+			<canvas id="game" width="1000" height="1000"></canvas>
+		</div>-->
+	</body>
+</html>
